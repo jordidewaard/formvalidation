@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript" ></script>
+</head>
+<body>
+
+<form name="jsvalidation" action="form.html" onsubmit="return validateForm()" method="post" class="w3-container">
+    Roepnaam:<br>
+    <input type="text" name="firstname" value="" >
+    <br>
+    Achternaam:<br>
+    <input type="text" name="lastname" value="" >
+    <br>
+    Postcode:<br>
+    <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" name="zipcode" value="" >
+    <br>
+    Telefoonnummer:<br>
+    <input type="tel" pattern="[0-9]{2}[0-9]{8}" name="phonenr" value="" >
+    <br>
+    E-Mail adres:<br>
+    <input type="email" name="email" value="" >
+    <br>
+    Geboortedatum:<br>
+    <input type="date" value="" >
+    <br>
+    Wachtwoord:<br>
+    <input type="password" value="" >
+    <br>
+    <input type="checkbox" value="" > Ik ga akkoord
+    <br>
+    <input type="submit" value="Opslaan">
+</form>
+
+</body>
+</html>
+
