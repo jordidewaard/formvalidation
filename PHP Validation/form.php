@@ -56,9 +56,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="name" id="inputName" value="<?php echo $name; ?>">
         <span class="error"><?php echo $nameErr; ?></span>
         <br>
+        Achternaam:<br>
+        <input type="text" name="lastname" value="" >
+        <br>
+        Postcode:<br>
+        <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" name="zipcode" value="" >
+        <br>
+        Telefoonnummer:<br>
+        <input type="tel" pattern="[0-9]{2}[0-9]{8}" name="phonenr" value="" >
+        <br>
         <label for="inputEmail">Email:</label><br>
         <input type="text" name="email" id="inputEmail" value="<?php echo $email; ?>">
         <span class="error"><?php echo $emailErr; ?></span>
+        <br>
+        Geboortedatum:<br>
+        <input type="date" value="" >
+        <br>
+        Wachtwoord:<br>
+        <input type="password" value="" >
+        <br>
+        <input type="checkbox" value="" > Ik ga akkoord
         <br>
     <input type="submit" value="Opslaan">
 </form>
